@@ -18,7 +18,7 @@ int main(int argc, char** argv)
 		for(int j=1; j<=WG; j++)
 		{
 			if(j >= WAGA[i])
-				TAB[i][j] = max( TAB[i-1][j], TAB[i-1][j-WAGA[i]]+CENA[i] );
+				TAB[i][j] = max( TAB[i-1][j], TAB[i-1][j-WAGA[i]]-CENA[i] );
 			else
 				TAB[i][j] = TAB[i-1][j];
 		}
